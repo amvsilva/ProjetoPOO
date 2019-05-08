@@ -1,16 +1,14 @@
-// Ver com o professor se as notas vão ser int mesmo
-
 package negocios;
 
 public class RendimentoEscolar {
   private Turma turma;
   private Aluno aluno;
-  private int nota1;
-  private int nota2;
+  private float nota1;
+  private float nota2;
   private String[] trabalhos;
-  private int[] notaTrabalhos;
+  private float[] notaTrabalhos;
   
-  public RendimentoEscolar(Turma turma, Aluno aluno, int nota1, int nota2, String[] trabalhos, int[] notaTrabalhos) {
+  public RendimentoEscolar(Turma turma, Aluno aluno, float nota1, float nota2, String[] trabalhos, float[] notaTrabalhos) {
     this.turma = turma;
     this.aluno = aluno;
     this.nota1 = nota1;
@@ -35,19 +33,19 @@ public class RendimentoEscolar {
     this.aluno = aluno;
   }
   
-  public int getNota1() {
+  public float getNota1() {
     return this.nota1;
   }
   
-  public void setNota1(int nota1) {
+  public void setNota1(float nota1) {
     this.nota1 = nota1;
   }
   
-  public int getNota2() {
+  public float getNota2() {
     return this.nota2;
   }
   
-  public void setNota2(int nota2) {
+  public void setNota2(float nota2) {
     this.nota2 = nota2;
   }
   
@@ -59,11 +57,11 @@ public class RendimentoEscolar {
     this.trabalhos = trabalhos;
   }
   
-  public int[] getNotaTrabalhos() {
+  public float[] getNotaTrabalhos() {
     return this.notaTrabalhos;
   }
   
-  public void setNotaTrabalhos(int[] notaTrabalhos) {
+  public void setNotaTrabalhos(float[] notaTrabalhos) {
     this.notaTrabalhos = notaTrabalhos;
   }
 }
