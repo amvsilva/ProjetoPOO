@@ -1,9 +1,12 @@
 package negocios;
 
+import java.util.ArrayList;
+
 public interface IFachadaProfessor {
-  public void logarProfessor(String nomeUsuario, String senha) throws UsuarioNaoCadastradoException, SenhaInvalidaException;
-  public void cadastrarProfessor(Professor professor) throws UsuarioJaCadastradoException;
-  public String[] exibirTurmasProfessor(String nomeUsuario) throws SemTurmaCadastradaException;
-  public String exibirTurmaProfessor(String nomeUsuario);
+  public Professor logarProfessor(String login, String senha) throws UsuarioNaoCadastradoException, SenhaInvalidaException;
+  public boolean cadastrarProfessor(Professor professor) throws UsuarioJaCadastradoException;
+  public ArrayList<String> exibirTurmasProfessor(int professorId) throws SemTurmaCadastradaException;
+  public Turma exibirTurmaProfessor(String login);
+  public void atualizarNota(String loginProfessor, String loginAluno); 
   // Continuar ...
 }
