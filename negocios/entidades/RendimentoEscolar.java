@@ -1,4 +1,4 @@
-package negocios;
+package negocios.entidades;
 
 public class RendimentoEscolar {
   private Turma turma;
