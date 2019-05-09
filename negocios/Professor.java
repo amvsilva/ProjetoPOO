@@ -7,15 +7,15 @@ public class Professor {
   private String nome;
   private String cargo;
   private Date dataNascimento;
-  private String nomeUsuario;
+  private String login;
   private String senha;
   
-  public Professor(int id, String nome, String cargo, int dia, int mes, int ano, String nomeUsuario, String senha) {
+  public Professor(int id, String nome, String cargo, int dia, int mes, int ano, String login, String senha) {
     this.id = id;
     this.nome = nome;
     this.cargo = cargo;
     this.dataNascimento = new Date(ano, mes, dia);
-    this.nomeUsuario = nomeUsuario;
+    this.login = login;
     this.senha = senha;
   }
   
@@ -51,12 +51,12 @@ public class Professor {
     this.dataNascimento = dataNascimento;
   }
   
-  public String getNomeUsuario() {
-    return this.nomeUsuario;
+  public String getLogin() {
+    return this.login;
   }
   
-  public void setNomeUsuario(String nomeUsuario) {
-    this.nomeUsuario = nomeUsuario;
+  public void setLogin(String login) {
+    this.login = login;
   }
   
   public String getSenha() {
