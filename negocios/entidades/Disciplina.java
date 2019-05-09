@@ -1,4 +1,4 @@
-package negocios;
+package negocios.entidades;
 
 public class Disciplina {
   private int id;
