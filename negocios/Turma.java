@@ -1,17 +1,20 @@
-// Perguntar ao professor como funcionará pra saber se tem vaga ou não na turma
-
 package negocios;
+
+import java.util.ArrayList;
 
 public class Turma {
   private int id;
   private Disciplina disciplina;
   private Professor professor;
-  //private int capacidadeDaTurma;
+  private int capacidadeDaTurma;
+  private ArrayList<Aluno> alunos;
   
-  public Turma(int id, Disciplina disciplina, Professor professor) {
+  public Turma(int id, Disciplina disciplina, Professor professor, int capacidadeDaTurma, ArrayList<Aluno> alunos) {
     this.id = id;
     this.disciplina = disciplina;
     this.professor = professor;
+    this.capacidadeDaTurma = capacidadeDaTurma;
+    this.alunos = alunos;
   }
   
   public int getId() {
@@ -36,5 +39,21 @@ public class Turma {
   
   public void setProfessor(Professor professor) {
     this.professor = professor;
+  }
+  
+  public int getCapacidadaDaTurma() {
+    return this.capacidadeDaTurma;
+  }
+  
+  public void setCapacidadeDaTurma(int capacidadeDaTurma) {
+    this.capacidadeDaTurma = capacidadeDaTurma;
+  }
+  
+  public ArrayList<Aluno> getAlunos() {
+    return this.alunos;
+  }
+  
+  public void setAlunos(ArrayList<Aluno> alunos) {
+    this.alunos = alunos;
   }
 }
