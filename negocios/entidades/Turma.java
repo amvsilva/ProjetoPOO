@@ -1,4 +1,4 @@
-package negocios;
+package negocios.entidades;
 
 import java.util.ArrayList;
 
