@@ -1,4 +1,5 @@
 package negocios;
+import java.util.ArrayList;
 
 public interface IFachadaAluno {
 	
