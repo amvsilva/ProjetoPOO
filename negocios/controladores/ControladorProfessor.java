@@ -8,6 +8,14 @@ public class ControladorProfessor {
     rep = new RepositorioProfessor();
   }
   
+  public IRepositorioProfessor getRep() {
+    return this.rep;
+  }
+  
+  public void setRep(IRepositorioProfessor rep) {
+    this.rep = rep;
+  }
+  
   public Professor logarProfessor(String login, String senha) throws UsuarioNaoCadastradoException, SenhaInvalidaException {
     return this.rep.logarProfessor(login, senha);
   }
