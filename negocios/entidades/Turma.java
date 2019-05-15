@@ -25,7 +25,7 @@ public class Turma {
     this.id = id;
   }
   
-  public String getDisciplina() {
+  public Disciplina getDisciplina() {
     return this.disciplina;
   }
   
@@ -33,7 +33,7 @@ public class Turma {
     this.disciplina = disciplina;
   }
   
-  public String getProfessor() {
+  public Professor getProfessor() {
     return this.professor;
   }
   
